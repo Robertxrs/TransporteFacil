@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #d1cfcf;
+}
+
+.link{
+  text-decoration: none;
+}
