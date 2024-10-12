@@ -1,0 +1,22 @@
+:root {
+  --cor-primary: #a8aece;
+  --cor-secondary: #969cbc;
+  --cor-text: #555555;
+  --cor-gray-bg: #eeeeee;
+}
+
+.cor-primary {
+  color: var(--cor-primary);
+}
+
+.cor-secondary {
+  color: var(--cor-secondary);
+}
+
+.cor-text {
+  color: var(--cor-text);
+}
+
+.cor-gray-bg {
+  background-color: var(--cor-gray-bg);
+}
