@@ -1,22 +1,26 @@
 <main>
   <section class="form-section">
-        <img src="/assets/svg/logo.svg" alt="">
-        <h2>{{title}}</h2>
-        <ng-content></ng-content>
-
-      <div class="btn-wrapper">
-        <button class="btn-primary">{{primaryBtnText}}</button>
-        <div class="divider">
-          <hr>
-          <span>or</span>
-          <hr>
-      </div>
-
-        <button class="btn-secundary">{{secundaryBtnText}}</button>
-      </div>
+      <img src="/assets/svg/logo.svg" alt=""/>
+     <h2>{{ title }}</h2>
+     <ng-content></ng-content>
+     <div class="btn-wrapper">
+          <button
+              class="btn-primary"
+              (click)="submit()"
+              [disabled]="disablePrimaryBtn"
+          >
+              {{ primaryBtnText }}
+          </button>
+          <div class="divider">
+              <div></div>
+              <hr><p>or</p><hr>
+              <div></div>
+          </div>
+          <button class="btn-secondary" (click)="navigate()">{{ secondaryBtnText }}</button>
+     </div>
   </section>
   <section class="main-section">
-      <h1>Seu filho esta seguro!</h1>
-      <img src="/assets/svg/main-ilustration.svg" alt="">
+      <h1>Cuide do seu Filho!</h1>
+      <img src="/assets/svg/main-ilustration.svg" alt=""/>
   </section>
 </main>
